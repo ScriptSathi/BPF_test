@@ -1,0 +1,5 @@
+.vscode
+execve
+*.o
+*.skel.h
+vmlinux.h
