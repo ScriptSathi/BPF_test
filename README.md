@@ -1,20 +1,13 @@
+# Execve BPF test
+
+This is just a simple PoC of eBPF power, nothing fancy
+
 ## Install
 
-### LIBBPF
-
 ```
-git submodule update --init
-cd libbpf/src
+git clone --recursive https://github.com/ScriptSathi/BPF_test.git
+cd BPF_test/libbpf/src
 make
-cd -
-```
-```bash
+cd ../../
 make
-# bpftool prog load keylog.bpf.o /sys/fs/bpf/keylog autoattach
-
-```
-
-```bash
-# Print BPF kernel log
-bpftool prog tracelog
 ```
